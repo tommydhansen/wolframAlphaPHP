@@ -17,12 +17,12 @@ include_once 'include/WAAssumption.php';
 * UPDATED TO WORK WITH THE NEWEST PHP VERSION BY NEKNUM
 */
 class WolframAlphaEngine{
-  private $APIURL = 'http://api.wolframalpha.com/v2/query'; // REPLACE THIS WITH FINAL URL WHEN PUBLIC
-  private $appID = '43R8QE-HJUEJXQJU2';
+  private $APIURL = 'http://api.wolframalpha.com/v2/query';
+  private $appID;
   
   
   public function __construct( $appID ) {
-    $this->appID = (int)$appID;
+    $this->appID = $appID;
   }
 
   /**
