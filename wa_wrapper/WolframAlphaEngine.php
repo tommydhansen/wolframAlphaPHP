@@ -21,8 +21,8 @@ class WolframAlphaEngine{
   private $appID = '43R8QE-HJUEJXQJU2';
   
   
-  public function WolframAlphaEngine( $appID ) {
-    $this->appID = $appID;
+  public function __construct( $appID ) {
+    $this->appID = (int)$appID;
   }
 
   /**
